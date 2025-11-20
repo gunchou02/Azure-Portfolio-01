@@ -15,7 +15,6 @@ Web サーバーの構築から、GitHub と連携した継続的なデプロイ
 graph LR
     User((User)) -- HTTPS --> Azure["Azure App Service<br>(Linux/PHP 8.4)"]
     GitHub[GitHub Repository] -- Push/Auto Deploy --> Azure
-
 💻 Tech Stack
 Cloud: Microsoft Azure (App Service)
 
@@ -48,21 +47,19 @@ GitHub と Azure Deployment Center を連携
 
 本番環境での動作確認
 
-📊 Monitoring Verification
-Azure Portal のダッシュボード遅延のため、クライアントサイドのネットワークログにてステータス 200 (送信成功) を確認し、監視機能の動作を検証しました。
-
-(※ 画像ファイル名を保存したものに合わせてください)
-
 📝 Future Roadmap
 今後のアップデート予定（学習ロードマップ）：
 
-_[x] Azure Database for MySQL との連携 (3-Tier 構成化) ✅ Complete!
+- [x] **Azure Database for MySQL** との連携 (3-Tier 構成化)
+- [x] **Environment Variables** を使用したセキュアな接続情報の管理
+- [x] **Application Insights** によるサーバー監視とログ分析 (Monitoring)
+- [ ] **Terraform** を活用したインフラ構築のコード化 (IaC)
+- [ ] カスタムドメインと SSL 証明書の適用
 
-_[x] Environment Variables を使用したセキュアな接続情報の管理 ✅ Complete!
+Created by [PARK JEONGBIN]. Student at HAL Tokyo.
 
-_[x] Application Insights によるサーバー監視とログ分析 (Monitoring) ✅ Complete!
+```
 
-_[ ] Terraform を活用したインフラ構築のコード化 (IaC)
+```
 
-_[ ] カスタムドメインと SSL 証明書の適用
 ```
